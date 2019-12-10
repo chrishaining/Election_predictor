@@ -1,14 +1,15 @@
 #this program takes a set of parameters and uses these to predict the outcome of the election
-
+from matplotlib import pyplot as plt
 from decimal import Decimal
 
-#conservative, brexit, lib-dem, labour
+#For each age group, show the polling predictions for likelihood to vote conservative, brexit, lib-dem, labour. Likelihoods are shown as decimals. This won't total to 1, as it excludes Other.
 eighteen_to_twentyfour = [.25, .03, .12, .48]
 twentyfive_thirtyfour = [.22, .04, .15, .46]
 thirtyfive_fiftyfour = [.40, .04, .17, .30]
 fiftyfive_sixtyfour = [.47, .05, .15, .26]
 sixtyfive_plus = [.61, .03, .14, .17]
 
+#Polling predictions for likelihood of Scottish voters to vote for each main party (all age groups)
 snp = .44
 scot_tories = .26
 scot_lab = .16
@@ -21,13 +22,12 @@ wales_electorate = 2230100
 scotland_electorate = 3925800
 nireland_electorate = 1248400
 
-#percentages of electorate by age
-
+#number of voters (UK) by age (000) - broken down by specific age (e.g. 18), so I will create a function to add the specific ages.
 electorate_eighteen_to_twentyfour = [385, 401, 411, 426, 432, 434, 448]
 electorate_twentyfive_thirtyfour = [447, 457, 471, 463, 454, 455, 440, 448, 447, 434]
 electorate_thirtyfive_fiftyfour = []
 electorate_fiftyfive_sixtyfour = [449, 440, 424, 406, 396, 387, 371, 357, 342, 341]
-# electorate_sixtyfive_plus = 8200000
+# I already know that the total number of people over 65 is 8200000
 def calculate_total_voters(group):
     total = 0
     for item in group:
@@ -44,20 +44,14 @@ def check_uk_electorate():
     return total
 
 total_electorate = check_uk_electorate()
-# print(total_electorate)
-#
-# print(youngest)
-# print(second_youngest)
-# print(third_youngest)
-# print(second_oldest)
-# print(oldest)
 
+#the group 35-54 was much bigger than the others, so rather than counting 20 numbers, I have calculated the number of these voters by subtracting the other groups from the total electorate
 def calculate_third_group():
     rest = youngest + second_youngest + second_oldest + oldest
     return total_electorate - rest
 
 third_youngest = calculate_third_group()
-# print(third_youngest)
+
 #likelihood to vote (%)
 turnout_eighteen_twentyfour = .58
 turnout_twentyfive_thirtyfour = .63
@@ -144,11 +138,12 @@ def count_snp_vote():
 snp_vote = count_snp_vote()
 print("The predicted SNP vote is {}.".format(snp_vote))
 
+labour_percentage = round((total_labour_vote / total_turnout) * 100)
+tory_percentage = round((total_tory_vote / total_turnout) * 100)
+
 def announce_result():
     winner = ""
     loser = ""
-    labour_percentage = round((total_labour_vote / total_turnout) * 100)
-    tory_percentage = round((total_tory_vote / total_turnout) * 100)
     winner_percentage = 0
     loser_percentage = 0
     if total_labour_vote > total_tory_vote:
@@ -164,3 +159,7 @@ def announce_result():
     return "The winners are {winner}. They got {winner_percentage}% of the vote. The losers are {loser}. They got {loser_percentage}% of the vote. ".format(winner=winner, winner_percentage=winner_percentage, loser=loser, loser_percentage=loser_percentage)
 
 print(announce_result())
+party = ["Tory", "Brexit Party", "Lib Dem", "Labour", "SNP"]
+share_of_vote = [tory_percentage, brexit_percentage, lib_percentage, labour_percentage, snp]
+plt.plot(party, share_of_vote)
+plt.show()
