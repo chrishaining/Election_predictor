@@ -1,6 +1,6 @@
 # Election Predictor
 
-This is a small program I worked on to develop my skills in Python variables, functions and lists.
+This is a small program I worked on to develop my skills in Python variables, functions, lists and graphs.
 
 Confession :innocent: - the title is a big overstatement. Rather, what this program does is as follows:
   * Estimates the number of votes, and percentage share of the total vote, for five political parties: Conservative, Labour, Brexit Party, Lib Dems and SNP (I'm writing the program in Scotland, hence the inclusion of the SNP).
@@ -18,4 +18,8 @@ To see what the real data are:
 * [ONS population statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/august2019)
 
 ## Future developments
-I'd like to refactor
+If I had more time, the top changes I'd like to make are:
+* Refactor the variable names, so that they make sense to others.
+* Structure the data differently, so that there are fewer parts to the program. For example, having separate variables for different aspects of each group adds a lot of code. Perhaps I could use [tuples](https://docs.python.org/3/c-api/tuple.html).
+* Refactor the functions so that they can be used for different datasets.
+* Learn more about how to use graphs with [matplotlib](https://matplotlib.org/).
