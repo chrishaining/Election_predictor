@@ -11,6 +11,10 @@ The predictor does not take into account that the number of votes does not direc
     * Party A has 50% of the votes, but has fewer seats than Party B. In real life, Party B would win, but my program would predict that Party A would win.
 The reason my program does not take such situations into account is because of the nature of the polling data.
 
+## What you need to run the file
+* Python version 3
+* matplotlib and decimal packages
+
 ## Links
 To see what the real data are:
 * [General election poll tracker](https://www.bbc.co.uk/news/uk-politics-49798197)
