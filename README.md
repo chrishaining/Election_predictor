@@ -13,7 +13,7 @@ The reason my program does not take such situations into account is because of t
 
 ## Links
 To see what the real data are:
-* <a href="https://www.bbc.co.uk/news/uk-politics-4979819" target="_blank">General election poll tracker</a>
+* [General election poll tracker](<a href="https://www.bbc.co.uk/news/uk-politics-4979819" target="_blank">General election poll tracker</a>)
 * [Voting intention: A generational divide?](https://www.bbc.co.uk/news/election-2019-50543903)
 * [ONS population statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/august2019)
 
