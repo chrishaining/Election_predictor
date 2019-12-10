@@ -11,9 +11,11 @@ The predictor does not take into account that the number of votes does not direc
     * Party A has 50% of the votes, but has fewer seats than Party B. In real life, Party B would win, but my program would predict that Party A would win.
 The reason my program does not take such situations into account is because of the nature of the polling data.
 
+<a href="http://www.google.com" target="blank">google</a>
+
 ## Links
 To see what the real data are:
-* [General election poll tracker](https://www.bbc.co.uk/news/uk-politics-49798197)
+* <a href="https://www.bbc.co.uk/news/uk-politics-4979819." target="blank">General election poll tracker</a>
 * [Voting intention: A generational divide?](https://www.bbc.co.uk/news/election-2019-50543903)
 * [ONS population statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/articles/overviewoftheukpopulation/august2019)
 
