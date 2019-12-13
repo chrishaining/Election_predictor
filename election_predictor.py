@@ -148,15 +148,15 @@ def announce_result():
     loser_percentage = 0
     if total_labour_vote > total_tory_vote:
         winner = "Labour"
-        loser = "The Tories"
+        loser = "Conservative"
         winner_percentage = labour_percentage
         loser_percentage = tory_percentage
     else:
-        winner = "The Tories"
+        winner = "Conservative"
         loser = "Labour"
         winner_percentage = tory_percentage
         loser_percentage = labour_percentage
-    return "The winners are {winner}. They got {winner_percentage}% of the vote. The losers are {loser}. They got {loser_percentage}% of the vote. ".format(winner=winner, winner_percentage=winner_percentage, loser=loser, loser_percentage=loser_percentage)
+    return "The winners are the {winner} Party. They got {winner_percentage}% of the vote. The losers are the {loser} Party. They got {loser_percentage}% of the vote. ".format(winner=winner, winner_percentage=winner_percentage, loser=loser, loser_percentage=loser_percentage)
 
 print(announce_result())
 party = ["Tory", "Brexit Party", "Lib Dem", "Labour", "SNP"]

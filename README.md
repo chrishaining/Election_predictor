@@ -27,3 +27,19 @@ If I had more time, the top changes I'd like to make are:
 * Structure the data differently, so that there are fewer parts to the program. For example, having separate variables for different aspects of each group adds a lot of code. Perhaps I could use [tuples](https://docs.python.org/3/c-api/tuple.html).
 * Refactor the functions so that they can be used for different datasets.
 * Learn more about how to use graphs with [matplotlib](https://matplotlib.org/).
+
+## UPDATE: the election results are in
+
+The results of the election are in. How did my election predictor program do? Remember, the program was predicting the number of votes and share of the votes, not the number of seats.
+
+| Party         | Share of vote (my predictor) | Share of vote (actual) | Accuracy (% points) |
+| :---          |    :----:                    |          :---:         |       ---:          |
+| Conservative  | 43                           | 43.6                   | -0.6                |
+| Labour        | 29                           | 32.2                   | -3.2                |
+| Lib Dem       | 16                           | 11.5                   | +4.5                |
+| Brexit Party  | 4                            | 2                      | +2                  |
+
+
+
+
+See [Results](https://www.bbc.co.uk/news/election/2019/results)
