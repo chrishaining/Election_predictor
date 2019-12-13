@@ -32,12 +32,12 @@ If I had more time, the top changes I'd like to make are:
 
 The results of the election are in. How did my election predictor program do? Remember, the program was predicting the number of votes and share of the votes, not the number of seats.
 
-| Party         | Share of vote (%) (my predictor)| Share of vote (%) (actual) | Accuracy of my prediction (% points) |
-| :---          |    :----:         |          :---:    |       :---:          |                                      |
-| Conservative  | 43                | 43.6              | -0.6                 |                                      |
-| Labour        | 29                | 32.2              | -3.2                 |                                      |
-| Lib Dem       | 16                | 11.5              | +4.5                 |                                      |
-| Brexit Party  | 4                 | 2                 | +2                   |                                      |
+| Party         | Share of vote (%) (my predictor)  | Share of vote (%)(actual) | Accuracy of my prediction (% points)  |
+| :---          |    :----:                         |          :---:            |       :---:                           |
+| Conservative  | 43                                | 43.6                      | -0.6                                  |
+| Labour        | 29                                | 32.2                      | -3.2                                  |
+| Lib Dem       | 16                                | 11.5                      | +4.5                                  |
+| Brexit Party  | 4                                 | 2                         | +2                                    |
 
 How did this translate into seats in Parliament?
 
@@ -49,4 +49,4 @@ How did this translate into seats in Parliament?
 | Brexit Party  | 0                 | 0           |
 
 
-See [Results on BBC News](https://www.bbc.co.uk/news/election/2019/results)
+See the results on[BBC News](https://www.bbc.co.uk/news/election/2019/results)
