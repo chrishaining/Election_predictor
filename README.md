@@ -43,7 +43,7 @@ How did this translate into seats in Parliament?
 
 | Party         | Number of seats   | % of seats  |
 | :---          | :---:             | :---:       |
-| Conservative  | 364               | 56          |
+| Conservative  | 365               | 56.2        |
 | Labour        | 203               | 31.2        |
 | Lib Dem       | 11                | 1.7         |
 | Brexit Party  | 0                 | 0           |
